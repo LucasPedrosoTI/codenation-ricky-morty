@@ -1,0 +1,23 @@
+.card {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #c3c3c3;
+  border-radius: 10px;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.card-body {
+  line-height: 2rem;
+  padding: 5px 15px;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.card-text {
+  font-size: 14px;
+}
