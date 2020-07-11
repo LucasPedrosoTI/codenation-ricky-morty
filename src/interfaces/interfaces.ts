@@ -18,3 +18,11 @@ export interface Result {
   url: string;
   created: string;
 }
+
+export interface SelectProps {
+  options: number[];
+  handleChange: Function;
+  filterFunction: Function;
+  rawData: Result[];
+  setStateFunction: Function;
+}

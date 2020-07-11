@@ -3,7 +3,7 @@ import "./Button.css";
 
 interface ButtonProps {
   name: string;
-  handleClick: any;
+  handleClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 export const Button = ({ name, handleClick }: ButtonProps) => {
   return (

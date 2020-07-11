@@ -14,4 +14,21 @@ const filterByEpisode = (characters: Result[], episode: string) => {
   );
 };
 
-export { filterByStatus, filterByEpisode, filterByGender };
+const generateArrayofEpisodes = (num: number): number[] => {
+  const arrayOfepisodes: number[] = [];
+  for (let i = 1; i <= num; i++) arrayOfepisodes.push(i);
+  return arrayOfepisodes;
+};
+
+const fetchData = async (url: string) => {
+  const response = await fetch(url);
+  return await response.json();
+};
+
+export {
+  filterByStatus,
+  filterByEpisode,
+  filterByGender,
+  generateArrayofEpisodes,
+  fetchData,
+};
